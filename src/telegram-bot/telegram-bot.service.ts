@@ -26,7 +26,7 @@ export class TelegramBotService implements OnModuleInit {
           type: 'web_app',
           text: 'VIEW MENU',
           web_app: {
-            url: 'index.html', // 이곳에 실제 미니앱 URL을 넣으세요.
+            url: 'https://siyeong0926.github.io/bottest/', // 이곳에 실제 미니앱 URL을 넣으세요.
           },
         },
       });
