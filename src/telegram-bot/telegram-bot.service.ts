@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { Telegraf } from 'telegraf';
+import { Markup, Telegraf } from 'telegraf';
 import * as dotenv from 'dotenv';
 import axios from 'axios';
 
@@ -36,25 +36,26 @@ export class TelegramBotService implements OnModuleInit {
       console.error('Failed to set menu button:', error);
     }
 
-    // // /start 명령어를 처리합니다.
-    // this.bot.start((ctx) => {
-    //   ctx.reply(
-    //     'Welcome to the\nNexton Telegram Bot!',
-    //     Markup.inlineKeyboard([
-    //       Markup.button.webApp(
-    //         'OPEN APP',
-    //         'https://maraton-frontend-typescript.vercel.app',
-    //       ),
-    //     ]),
-    //   );
-    //
-    //   ctx.reply(
-    //     'Click APP !!',
-    //     Markup.keyboard([['NEXTON', 'MARATON', 'TEST']]) // 두 버튼을 한 줄에 표시
-    //       .resize(),
-    //     // .oneTime()
-    //   );
-    // });
+    // /start 명령어를 처리합니다.
+    this.bot.start((ctx) => {
+      ctx.reply(
+        'Welcome to the\nNexton Telegram Bot!',
+        Markup.inlineKeyboard([
+          Markup.button.webApp(
+            'OPEN APP',
+            'https://maraton-frontend-typescript.vercel.app',
+          ),
+        ]),
+      );
+
+      //
+      //   ctx.reply(
+      //     'Click APP !!',
+      //     Markup.keyboard([['NEXTON', 'MARATON', 'TEST']]) // 두 버튼을 한 줄에 표시
+      //       .resize(),
+      //     // .oneTime()
+      //   );
+    });
 
     this.bot.hears('NEXTON', (ctx) => {
       ctx.reply("'Here is your link: https://example.com'");
