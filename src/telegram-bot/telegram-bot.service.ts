@@ -21,7 +21,10 @@ export class TelegramBotService implements OnModuleInit {
       ctx.reply(
         'Welcome to the NestJS Telegram Bot!',
         Markup.inlineKeyboard([
-          Markup.button.webApp('미니 앱 열기', 'https://your-mini-app-url.com'),
+          Markup.button.webApp(
+            '미니 앱 열기',
+            'https:maraton-frontend-typescript.vercel.app',
+          ),
         ]),
       );
     });
