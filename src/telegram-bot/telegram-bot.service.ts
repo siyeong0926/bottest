@@ -23,7 +23,7 @@ export class TelegramBotService implements OnModuleInit {
         Markup.inlineKeyboard([
           Markup.button.webApp(
             '미니 앱 열기',
-            'https:maraton-frontend-typescript.vercel.app',
+            'https://maraton-frontend-typescript.vercel.app',
           ),
         ]),
       );
