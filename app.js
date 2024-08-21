@@ -1,8 +1,24 @@
 const menuItems = [
-  { name: '🍔 BOT ', price: '^^' },
-  { name: '🍟 MARATON', price: '--' },
-  { name: '🌭 HEY!!', price: 'o_o' },
-  { name: '🌮 TEST', price: '123' },
+  {
+    name: 'MARATON 1',
+    price: '^^',
+    link: 'https://maraton-frontend-typescript.vercel.app/bot',
+  },
+  {
+    name: 'MARATON 2',
+    price: '--',
+    link: 'https://maraton-frontend-typescript.vercel.app/maraton',
+  },
+  {
+    name: 'MARATON 3',
+    price: 'o_o',
+    link: 'https://maraton-frontend-typescript.vercel.app/hey',
+  },
+  {
+    name: 'MARATON 4',
+    price: '123',
+    link: 'https://maraton-frontend-typescript.vercel.app/test',
+  },
 ];
 
 const menuContainer = document.getElementById('menu-items');
@@ -15,8 +31,13 @@ menuItems.forEach((item) => {
   menuItem.innerHTML = `
         <div class="text-2xl">${item.name}</div>
         <div class="text-gray-700 font-bold text-lg mt-2">${item.price}</div>
-        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none">ADD</button>
-
+        <button class="mt-4 bg-[#7fff00] text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none">ADD</button>
     `;
+
+  // 버튼 클릭 시 링크로 이동하도록 설정
+  menuItem.querySelector('button').addEventListener('click', () => {
+    window.location.href = item.link;
+  });
+
   menuContainer.appendChild(menuItem);
 });

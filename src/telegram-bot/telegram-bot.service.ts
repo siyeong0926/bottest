@@ -61,29 +61,40 @@ export class TelegramBotService implements OnModuleInit {
     this.bot.start((ctx) => {
       ctx.replyWithPhoto(
         {
-          url: 'https://cdn.pixabay.com/photo/2016/06/01/12/59/pizza-1428931_1280.png',
+          url: 'https://raw.githubusercontent.com/siyeong0926/image/main/image%20(2).png',
         }, // 이미지 URL
         {
-          caption: `Maraton Test Bot!`,
+          caption: `💵 With MARATON, you're not just staking TON - you're running a race to high yields. Leverage our Arbitrage Bot for maximum returns and take the lead!`,
           reply_markup: Markup.inlineKeyboard([
-            [Markup.button.callback('🌈 Onboarding', 'onboarding')],
-            [Markup.button.callback('🚀 Open Maraton', 'open_maraton')],
+            [
+              Markup.button.webApp(
+                '🌈 Onboarding',
+                'https://maraton-frontend-typescript.vercel.app',
+              ),
+            ],
+            [
+              Markup.button.webApp(
+                '🚀 Open Maraton',
+                'https://maraton-frontend-typescript.vercel.app',
+              ),
+            ],
             [
               Markup.button.url(
                 '🌍 Join our Global Channel',
-                'https://www.naver.com/',
+                'https://maraton-frontend-typescript.vercel.app',
               ),
             ],
             [
               Markup.button.url(
                 '👏 Official Website',
-                'https://www.naver.com/',
+                'https://maraton-frontend-typescript.vercel.app',
               ),
             ],
           ]).reply_markup,
         },
       );
     });
+
     // /start 명령어를 처리합니다.
     // this.bot.start((ctx) => {
     //   ctx.reply(
