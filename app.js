@@ -2,22 +2,22 @@ const menuItems = [
   {
     name: 'MARATON 1',
     price: '^^',
-    link: 'https://maraton-frontend-typescript.vercel.app/bot',
+    link: 'https://maraton.run',
   },
   {
     name: 'MARATON 2',
     price: '--',
-    link: 'https://maraton-frontend-typescript.vercel.app/maraton',
+    link: 'https://maraton.run',
   },
   {
     name: 'MARATON 3',
     price: 'o_o',
-    link: 'https://maraton-frontend-typescript.vercel.app/hey',
+    link: 'https://maraton.run',
   },
   {
     name: 'MARATON 4',
     price: '123',
-    link: 'https://maraton-frontend-typescript.vercel.app/test',
+    link: 'https://maraton.run',
   },
 ];
 
