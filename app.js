@@ -31,7 +31,7 @@ menuItems.forEach((item) => {
   menuItem.innerHTML = `
         <div class="text-2xl">${item.name}</div>
         <div class="text-gray-700 font-bold text-lg mt-2">${item.price}</div>
-        <button class="mt-4 bg-#7fff00 text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none">ADD</button>
+        <button class="mt-4 bg-lime-300 text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none">ADD</button>
     `;
 
   // 버튼 클릭 시 링크로 이동하도록 설정
