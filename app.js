@@ -27,12 +27,11 @@ menuItems.forEach((item) => {
   const menuItem = document.createElement('div');
   menuItem.className =
     'bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center';
-
   menuItem.innerHTML = `
-        <div style={{fontSize:'30px'}}>${item.name}</div>
-        <div style={{fontSize:'20px'}}>${item.price}</div>
-        <button  style={{backgroundColor:'black'}}>ADD</button>
-    `;
+    <div style="font-size: 30px;">${item.name}</div>
+    <div style="font-size: 20px;">${item.price}</div>
+    <button style="background-color: #71ff71; color: white;">ADD</button>
+`;
 
   // 버튼 클릭 시 링크로 이동하도록 설정
   menuItem.querySelector('button').addEventListener('click', () => {
