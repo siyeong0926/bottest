@@ -28,9 +28,9 @@ menuItems.forEach((item) => {
   menuItem.className =
     'bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center';
   menuItem.innerHTML = `
-    <div style="font-size: 30px;">${item.name}</div>
-    <div style="font-size: 20px;">${item.price}</div>
-    <button style="background-color: #71ff71; color: white;">ADD</button>
+    <div style="font-size: 25px;">${item.name}</div>
+    <div style="font-size: 15px;">${item.price}</div>
+    <button style="background-color: #B3E15D; border-radius: 20px; color: white; padding: 5px 10px">ADD</button>
 `;
 
   // 버튼 클릭 시 링크로 이동하도록 설정
