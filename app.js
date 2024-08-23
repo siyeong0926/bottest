@@ -30,7 +30,8 @@ menuItems.forEach((item) => {
   menuItem.innerHTML = `
     <div style="font-size: 25px;">${item.name}</div>
     <div style="font-size: 15px;">${item.price}</div>
-    <button style="background-color: #B3E15D; border-radius: 20px; color: white; padding: 5px 10px">ADD</button>
+    <button style="background-color: #B3E15D; border-radius: 20px; color: white; 
+    margin-top: 10px; padding: 5px 10px">ADD</button>
 `;
 
   // 버튼 클릭 시 링크로 이동하도록 설정
