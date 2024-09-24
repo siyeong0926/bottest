@@ -66,8 +66,18 @@ export class TelegramBotService implements OnModuleInit {
         {
           caption: `💵 With MARATON, you're not just staking TON - you're running a race to high yields. Leverage our Arbitrage Bot for maximum returns and take the lead!`,
           reply_markup: Markup.inlineKeyboard([
-            [Markup.button.webApp('🌈 Onboarding', 'https://maraton.run')],
-            [Markup.button.webApp('🚀 Open Maraton', 'https://maraton.run')],
+            [
+              Markup.button.webApp(
+                '🌈 Onboarding',
+                'https://ziptalk.github.io/maraton-onboarding-typescript ',
+              ),
+            ],
+            [
+              Markup.button.webApp(
+                '🚀 Open Maraton',
+                'https://maraton-frontend-typescript.vercel.app',
+              ),
+            ],
             [
               Markup.button.url(
                 '🌍 Join our Global Channel',
